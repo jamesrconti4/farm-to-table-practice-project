@@ -1,3 +1,55 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
 html{
     font-size:62.5%;
 }
@@ -37,7 +89,7 @@ a:hover{
 i{
     font-size: 5rem;
 }
-/*header section styles*/
+
 header nav{
     position:fixed;
     width:100%;
@@ -59,10 +111,10 @@ header nav{
   display: flex;
   justify-content: space-around;
 }
-/*Top Section Styles*/
+
 #top{
     height:85vh;
-    background-image:url('https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/header.jpg?raw=true');
+    background-image:url('../images/header.jpg');
     margin-top:5%;
     background-size:cover;
     background-repeat:no-repeat;
@@ -72,7 +124,7 @@ header nav{
   align-items:center;
 }
 
-/*Farm Section Styles*/
+
 .container{
     margin-top:5%;
   display:flex;
@@ -90,18 +142,18 @@ header nav{
     margin: 15% 0;
 }
 
-/*blank section styles*/
+
 
 .hero-image{
     height:40vh;
-    background-image:url('https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/dirt.jpg?raw=true');
+    background-image:url('../images/dirt.jpg');
     background-size:cover;
     background-position:center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
-/*About Section Styles*/
+
 #about{
     display:flex;
     justify-content:center;
@@ -117,7 +169,6 @@ header nav{
     text-align:left;
 }
 
-/*Gallery Section Styles*/
 
 .gallery{
     display:flex;
@@ -147,19 +198,19 @@ header nav{
     display:block;
 }
 .farm{
-    background-image:url('https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/barn.jpg?raw=true');
+    background-image:url('../images/barn.jpg');
 }
 .cook{
-    background-image:url('https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/cook.jpg?raw=true');
+    background-image:url('../images/cook.jpg');
 }
 .produce{
-    background-image: url('https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/produce.jpg?raw=true');
+    background-image: url('../images/produce.jpg');
 }
 .animals{
-    background-image: url('https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/sheep.jpg?raw=true');
+    background-image: url('../images/sheep.jpg');
 }
 
-/*Contact Section Styles*/
+
 #contact{
 display:flex;
   flex-wrap: wrap;
@@ -185,7 +236,7 @@ display:flex;
     width:70%;
 }
 
-/*Footer Section Styles*/
+
 
 footer{
     background-color:#fcb131;
@@ -223,8 +274,7 @@ nav.main a{
     align-items:flex-end;
 }
 
-/*Media Queries*/
-/*Tablet*/
+
 @media (max-width: 800px){
     .links{
         width:70%;
@@ -254,7 +304,7 @@ nav.main a{
     }
 }
 
-/*phone*/
+
 @media (max-width: 500px){
     header nav{
         flex-direction:column;
@@ -306,8 +356,5 @@ nav.main a{
     footer div{
         width:90%;
         margin:4% 0;
-    }
-    .copyright{
-        justify-content:flex-start;
     }
 }
